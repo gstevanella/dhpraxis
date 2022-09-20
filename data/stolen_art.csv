@@ -1,0 +1,16 @@
+Nr,art_name,Art Type,author,where_stolen,area,country,when,by,Latitude,Longitude,imagefile,filepath
+1,Testa di Fauno,Sculpture,Michelangelo Buonarroti,Poppi,Arezzo,Italy,Aug-44,German soldiers 305 Division,43.732769,11.76403,testa_fauno.jpeg,images/testa_fauno.jpeg
+2,Due studi per i Prigioni e Due studi per il Giudizio Universale,Pen on paper,Michelangelo Buonarroti,Napoli,Napoli,Italy,Sep-43,Nazi Troops,40.832169,14.246972,,
+3,Campagna veneta con fabbricato rurale e alcune figure,Oil on canvas,Canaletto,Florence,Florence,Italy,Unspecified,German soldiers 362 Division,43.76956,11.255814,,
+4,Veduta della Riva degli Schiavoni verso est,Oil on canvas,Canaletto,Camaiore,Lucca,Italy,Apr-44,Nazi Troops: 16th division,43.93911,10.298768,veduta.jpeg,images/veduta.jpeg
+5,Venere,Oil on canvas,Titian,Trieste,Trieste,Italy,1943,Nazi Troops,45.653408,13.777314,venere.jpeg,images/venere.jpeg
+6,Ritratto di Ludovico Ariosto,Oil on canvas,Titian*,Casola Valsenio,Ravenna,Italy,1933,Not specified,44.223482,11.623103,ariosto.jpeg,images/ariosto.jpeg
+7,Santa Cecilia,Oil on canvas,Guido Reni,Trastevere,Rome,Italy,Unspecified,Not specified,41.876324,12.46907,cecilia.jpeg,images/cecilia.jpeg
+8,Deposizione di Cristo,Oil on canvas,Guido Reni,Parma,Parma,Italy,Apr-45,German Soldiers,44.801485,10.327904,,
+9,Cristo Crocifisso,Oil on board,Bronzino,Montagnana,Florence,Italy,Unspecified,Nazi Troops,43.672741,11.104603,crocifisso.jpeg,images/crocifisso.jpeg
+10,Violins (Strocchi Collection),Woodwork,Antonio Stradivari,Cotignola,Ravenna,Italy,Jan-45,Nazi Troops: Veitrz,44.38353,11.943418,violin.jpeg,images/violin.jpeg
+11,Madonna con bambino e San Giovannino,Pencil and chalk on paper,Raphael,Barberino del Mugello ,Florence,Italy,1944,German Fallschirm-Jeager Parachuters ,44.01539,11.229711,madonna.jpeg,images/madonna.jpeg
+12,Madonna con bambino,Terracotta,Giovanni della Robbia,Fiesole,Florence,Italy,Unspecified,Nazi Troops,43.830051,11.303925,,
+13,Portrait of a young man,Oil on canvas,Raphael,Cracow,Cracow,Poland,1939,Hitler's guards,50.06465,19.94498,young_map.jpeg,images/young_map.jpeg
+14,Painter on His Way to Work,Oil on canvas,Vincent Van Gogh,Magdeburg,Elbe River,Germany,Unspecified,Nazi Troops,52.106369,11.638348,painter.jpeg,images/painter.jpeg
+15,"Portrait of Trude Steiner,",Unspecified,Gustav Klimt,Vienna,Vienna,Austria,1938,Nazi Troops,48.208174,16.373819,trude.jpeg,images/trude.jpeg

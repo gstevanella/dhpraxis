@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Intro to DH: Mapping Praxis</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  <!-- LoadingLeaflet code library - see updates at http://leafletjs.com/download.html -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+  <!-- CSV data on Leaflet maps -->
+  <!-- Load jQuery and PapaParse to read data from a CSV file -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.0/papaparse.min.js"></script>
+    
+  <!-- Position the map with Cascading Style Sheet (CSS) -->
+  <link rel="stylesheet" href="./style.css">
+
+<!-- For the font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+<!-- ADDITION FOR THE NAVIGATION BAR  -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+</head>
+<body>
+<nav class="navbar">
+    <!-- LOGO -->
+    <div class="logo">Mapping stolen art: an attempt</div>
+    <!-- NAVIGATION MENU -->
+    <ul class="nav-links">
+      
+      <!-- USING CHECKBOX HACK -- to be decided
+     <input type="checkbox" id="checkbox_toggle" />
+     <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+     >
+<img src="images\moodboard.pdf" alt="Moodboard" title="Moodboard">
+    <!-- NAVIGATION MENUS -->
+      <div class="menu">
+        <li><a href="#text-zero">Home</a></li>
+        <li><a href= "https://leafletjs.com/" target="_blank">Leaflet</a></li>
+        <li><a href= "https://jwa.org/encyclopedia/article/bloch-bauer-adele" target="_blank">Inspiration</a></li>
+        <li><a href="#table">Pro's & Con's</a></li>
+        <li><a href="#map">The Result </a></li>
+</nav>
+
+  
+
+   <!-- <header class="header" data-scroll>
+    <div class="col-12">
+    <div class="container">
+      <h1>TBC</h1>
+    </div>
+    </div>
+  </header> -->
+
+  <div class="col-12">
+    <div class="long-text" id="text-zero">
+ <h3>Art was another victim of the WWII atrocities</h3>
+      <p> The below map shows where various masterpieces were when confiscated by the Nazi troops during the course of the WWII
+        <a href=https://en.wikipedia.org/wiki/Art_theft_and_looting_during_World_War_II target="_blank" rel="noopener noreferrer">(art theft phenomenon).</a>  </p>
+<p></p>
+        
+  </div>
+</div>
+<h2>Originality</h2>
+        <p> Many websites offer lists of famous stolen paintings or statues, however, none of them has an embedded map 
+          that displays the name of each specific artwork, where it was stolen (if available) and a popup that integrates the 
+          photo of the piece of art directly in the map.
+      This project has required me to create a small dataset and an image archive. 
+    This page is meant to be interactive, therefore users can click on any of the map markers 
+  and reveal the underlying information. </p>
+        <p></p>
+<h2>The map: from ideation to realisation</h2>
+
+      <p1>The map was built using Leaflet (https://leafletjs.com/), an open-source JavaScript library that is available 
+        on the internet.
+      In order to build the map, however, some HTML and JavaScript knowledge is required, and therefore creating a map might take some time.
+      I took Matt's challenge very seriously and attempted to map something that no one had mapped before or that could be difficult to map using the selected software.
+      The tables incorporate some of the summary aspects of this mapping assignment.
+  </p1> <br> <br>
+<h2>My Key Takeaways</h2>
+    <table class = "table">
+      <div id='table'> </div>
+      <tr>
+        <td style="color:red;">Aspect</td>
+        <td td style="color:green;">My Comment</td>
+        
+        </tr>
+        <tr>
+          <td>Time spent on the project</td>
+          <td>Approximately 2 days, on and off</td>
+
+        </tr>
+        <tr>
+          <td >Knowledge Acquired</td>
+          <td>Learnt how to use Leaflet, and JavaScript in relation to Leaflet, plus improved CSS understanding</td>
+        </tr>
+        <tr>
+          <td>Database search</td>
+          <td>Lack of pre-exsiting available database: I had to build from scratch both a small CVS dataset and a linked archive of images</td>
+        </tr>
+        <tr>
+          <td>Biggest Challenge</td>
+          <td>Find a way to link the popup associate with each datapoint (aka each artwork) to its relevant photo in an automated way</td>
+        </tr>
+        <tr>
+          <td>Customisation</td>
+          <td>Creating a customised icon to pin on the map was relatively quick (I used flaticon)</td>
+        </tr>
+        <tr>
+          <td>Helpful Tool</td>
+          <td>Papaparse</td>
+        </tr>  
+        
+    </table>
+    
+    <h2>User's experience</h2>
+    <table class = "table">
+      <div id='table'> </div>
+      <tr>
+        <td style="color:red;">Feature</td>
+        <td td style="color:green;">My Comment</td>
+        
+        </tr>
+        <tr>
+          <td>Usability of leaflet maps</td>
+          <td>Easy to use and intuitive</td>
+
+        </tr>
+        <tr>
+          <td >Account</td>
+          <td>NO need for an ad-hoc account</td>
+        </tr>
+        <tr>
+          <td>Design</td>
+          <td>The map design is pretty basic and not particularly glamouros, hence it might be difficult to keep the user engaged</td>
+        </tr>
+        
+    </table>
+    <h2>WWII Stolen Masterpieces</h2>
+  <div class="container">
+        <p> Click me to find out the name of the stolen masterpiece and the photo (if available)
+          <img src = 'icons/location.png' alt="Map Icon" width="50" height="50">
+         </p>
+         <p> Click me to switch to OMS map view 
+          <img src = 'icons/level.png' alt="Level Icon" width="40" height="40">
+         </p>
+  </div>
+
+  
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <!--  HTML division tag to layout the map -->
+    <h4>The result</h4>   
+             <div id="hover-content"> </div>
+      <div id='map'> </div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- separate <div> for credits + styling credits in CSS -->
+        <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-9 col-md-6 col-lg-8">
+                  <div class="credits">
+                    <h4>Credits and sources</h4>
+                    <p><a href="https://www.flaticon.com/free-icons" target="_blank">Art icons - Flaticon</a></p>
+                    <p><a href="https://www.bak.admin.ch/bak/it/home/patrimonio-culturale/opere-d-arte-frutto-di-spoliazioni/banca-dati-centralizzata.html" target="_blank" title="Lost Art">Banca Dati Svizzera</a></p>
+                    <p><a href="https://www.vanityfair.it/lifestyle/hi-tech/2020/11/14/samsung-missing-masterpieces-mostra-digitale-opere-arte-perdute" target="_blank" title="Opere">Opere d'arte perdute</a></p>
+                    <p><a href="https://www.lostart.de/en/start" title="Lost art">Lost Art</a></p>
+                    <p><a href="https://www.giannellachannel.info/quei-1653-tesori-rubati-da-hitler-e-ancora-prigionieri-di-guerra/" target="_blank" title="Drill">Tesori Rubati</a></p>
+                
+                    <p> Powered by: Gem.S.</p>  
+                      
+                  
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+ <!-- Javascript (.js)  -->
+   <script src="map.js" type="module"></script>
+    <script src="./lib/d3.js"></script>
+</body>
+</html>
+          
